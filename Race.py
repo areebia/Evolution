@@ -12,3 +12,5 @@ class Race:
         self.amount = amount
         self.birRate = birRate
         self.exp = exp
+
+    

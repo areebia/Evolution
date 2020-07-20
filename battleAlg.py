@@ -1,6 +1,11 @@
 #inherent bias in code, variables ending in 
 #1 should be part of race with higher atk spd
 
+#still requires implementation of adding attack 
+#from luck based scenarios
+
+
+import Race
 
 def combat(racelist1, racelist2):
     #first list of race stats added together

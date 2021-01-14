@@ -16,7 +16,7 @@ class Angel(Race.Race):
         self.amount = amount
 
    
-class HighAngel(Angel):
+class HAngel(Angel):
     def __init__(self, exp = 0, amount = 1):
         self.name = "High Angel" 
         self.hp = 125

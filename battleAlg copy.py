@@ -4,7 +4,11 @@
 #still requires implementation of adding attack 
 #from luck based scenarios
 
-import species #Race, angel, eagle, elves, goblin, human, orc, serpents, undead, wolf
+
+from species import goblin
+#import Race
+#from species.Race.goblin import Goblin 
+#from species.goblin import Hobgoblin 
 
 def combat(racelist1, racelist2):
     #first list of race stats added together
@@ -51,14 +55,14 @@ def calcDamage(defense, attack):
 
 
 def main():
-    x = species.goblin.Goblin()
-    x.exp = 25
+    x = goblin.Goblin()
+    x.exp = 50
     print(x.evo, x.tier)
-    x.amount = 10
+    x.amount = 60
     print("amount:", x.amount)
     if x.evolve() == True:
         print(x.exp, " is greater than ", x.evo, ", therefore evolve")
-        y = species.goblin.Hobgoblin(exp= x.exp-x.evo) 
+        y = goblin.Hobgoblin(exp= x.exp-x.evo) 
     elif x.evolve() == False:   
         print(x.exp, " is less than ", x.evo, ", therefore no evolve")
     else:

@@ -1,4 +1,4 @@
-import Race
+from Race import Race
 
 class Goblin(Race.Race):
    
